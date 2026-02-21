@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my_demo_package_koktel131"
+version = "0.0.2"
+dependencies = [
+    "requests",
+]
+description = "A simple demo package for learning"
+authors = [
+    {name = "koktel141", email = "pooriya.rahnamaeii@email.com"},
+]
+readme = "README.md"
+requires-python = ">=3.8"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+[project.scripts]
+run = "project.main:hello"
