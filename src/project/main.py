@@ -1,6 +1,6 @@
 import sys
 
-print("New update!")
+print("New update (0.0.3) !")
 
 def hello():
     if len(sys.argv) > 1:
@@ -8,7 +8,6 @@ def hello():
     else:
         print("Hello User!")
     
-    # Start the main loop
     main_loop()
 
 def main_loop():
@@ -30,3 +29,10 @@ def calculate():
         print(f"Result: {x} + {y} = {x + y}")
     except ValueError:
         print("Invalid input! Please enter numbers only.")
+
+def days_to_nowruz():
+    from datetime import date
+    nowruz = date(2026, 3, 20) # تاریخ حدودی
+    today = date.today()
+    diff = nowruz - today
+    print(f"Only {diff.days} days left until Nowruz!")
