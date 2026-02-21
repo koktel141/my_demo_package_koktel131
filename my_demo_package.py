@@ -1,5 +1,7 @@
-from project import main
+from project.main import *
 
-if __name__ == "__main__":
-    main.hello()
-    main.days_to_nowruz()
+"""if __name__ == "__main__":
+    hello()
+    days_to_nowruz()
+    """
+menu()

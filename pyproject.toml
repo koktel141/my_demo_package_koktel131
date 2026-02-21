@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "my_demo_package_koktel131"
-version = "0.0.3"
+version = "0.0.4"
 dependencies = [
     "requests",
 ]
@@ -18,4 +18,4 @@ requires-python = ">=3.8"
 [tool.setuptools.packages.find]
 where = ["src"]
 [project.scripts]
-run = "project.main:hello"
+run = "project.main:menu"

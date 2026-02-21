@@ -1,6 +1,6 @@
 import sys
 
-print("New update (0.0.3) !")
+print("New update (0.0.4) !")
 
 def hello():
     if len(sys.argv) > 1:
@@ -36,3 +36,19 @@ def days_to_nowruz():
     today = date.today()
     diff = nowruz - today
     print(f"Only {diff.days} days left until Nowruz!")
+    
+def menu():
+    print("--- Welcome to My Package ---")
+    print("1. Say Hello")
+    print("2. Days to Nowruz")
+    print("3. Add Numbers")
+    
+    choice = input("What do you want to do? (1/2/3): ")
+    
+    if choice == "1":
+        hello()
+    elif choice == "2":
+        days_to_nowruz()
+    elif choice == "3":
+        # تابع جمع اعداد که قبلاً داشتی
+        pass
