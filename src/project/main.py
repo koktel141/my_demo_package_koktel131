@@ -1,6 +1,6 @@
 import sys
 
-print("New update (0.0.4) !")
+print("New update (0.0.5) !")
 
 def hello():
     if len(sys.argv) > 1:
@@ -50,5 +50,4 @@ def menu():
     elif choice == "2":
         days_to_nowruz()
     elif choice == "3":
-        # تابع جمع اعداد که قبلاً داشتی
         pass
